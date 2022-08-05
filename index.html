@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---- custom css link here ------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- FONT Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <title>project 1 - Home page</title>
+
+</head>
+
+<body>
+
+    <!-- ------- Navbar start here ---------- -->
+    <header class="container">
+        <nav class="navbar flex space-between">
+            <div class="logo"><img src="img/Logo.png" alt="logo"></div>
+            <ul class="menu-list flex gap-20">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Female</a></li>
+                <li><a href="#">Male</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="search-box flex gap-5">
+                <i class='bx bx-search'></i>
+                <button class="search-btn">Search</button>
+                <div class="bar">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- --------- Navbar end here ----- -->
+    <main>
+        <section class="home-section container flex space-between">
+
+            <div class="img">
+                <img src="img/Image.png" alt="user-img" id="user-img">
+                <img src="img/squares.png" alt="square-img" id="square-img">
+            </div>
+            <div class="content">
+                <h1>What's Trend in 2025 ?</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat atque id impedit nihil cupiditate
+                    aperiam officiis consectetur, reprehenderit odio! Laboriosam quidem cupiditate quis dicta possimus
+                    aut inventore molestiae, quasi alias?</p>
+                <div class="buttons">
+                    <button class="button-email">Email Address</button>
+                    <button class="button-join">JOIN NOW</button>
+                </div>
+
+                <div class="contact-us">
+                    <span>contact us</span>
+                    <div class="icons flex center gap-20">
+                        <img src="img/Group.png" alt="">
+                        <img src="img/Group (1).png" alt="">
+                        <img src="img/Group (2).png" alt="">
+                        <img src="img/Group (3).png" alt="">
+                    </div>
+                </div>
+                <img src="img/globe.png" alt="" id="globe">
+                <img src="img/start.png" alt="" id="start1">
+                <img src="img/start.png" alt="" id="start2">
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ----- java script --  -->
+    <script>
+        const menu_list = document.querySelector(".menu-list"),
+            bar_btn = document.querySelector(".bar i");
+
+        bar_btn.addEventListener("click", () => {
+            menu_list.classList.toggle("active");
+            bar_btn.classList.toggle('bx-x');
+        });
+
+    </script>
+</body>
+
+</html>
